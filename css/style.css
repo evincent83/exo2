@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: row-reverse;
+}
+section .main {
+  background-color: black;
+  color: white;
+  width: 60%;
+}
+section .main .mainInfo {
+  padding: 5% 5% 5% 15%;
+}
+section .main .mainInfo h2 {
+  font-weight: 700;
+}
+section .main .mainInfo h2,
+section .main .mainInfo #mainSubTitle {
+  padding-right: 20%;
+}
+section .main .mainInfo ul {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  padding: 0;
+}
+section .main .mainInfo ul li {
+  border: 1px solid white;
+  margin-bottom: 15px;
+  width: 80%;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+}
+section .main .mainInfo ul li p {
+  margin: 0;
+  padding-left: 30px;
+  font-size: 12px;
+  font-weight: 500;
+}
+section .main .mainInfo ul li img {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+section .main .mainInfo ul li.active {
+  background-color: coral;
+}
+section .picture {
+  width: 40%;
+  position: relative;
+}
+section .picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section .picture .about {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  opacity: 0.8;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  right: -15%;
+  width: 70%;
+}
+section .picture .about h3 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+section .picture .about p b {
+  font-weight: 700;
+}
+section .picture .about a {
+  color: coral;
+  text-decoration: none;
+}
+section .picture .about a svg {
+  vertical-align: top;
+}
+
+/* tel portable */
+@media screen and (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+  section .main {
+    width: 100%;
+  }
+  section .main .mainInfo {
+    padding: 15% 5%;
+  }
+  section .main .mainInfo h2 {
+    padding: 0;
+    text-align: center;
+  }
+  section .main .mainInfo #mainSubTitle {
+    padding: 0;
+    text-align: center;
+  }
+  section .main .mainInfo ul {
+    grid-column-gap: 20px;
+  }
+  section .main .mainInfo ul li {
+    width: auto;
+  }
+  section .picture {
+    width: 100%;
+    height: 700px;
+  }
+  section .picture .about {
+    top: -70px;
+    left: 90px;
+    width: 35%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
